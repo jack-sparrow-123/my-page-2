@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ocean shooter</title>
+    <style>
+
+ 
+       body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+        .container {
+            text-align: center;
+        }
+        .logo {
+            width: 80%;
+            height: auto;
+        }
+        h1 {
+            color: rgb(33, 114, 146);
+            font-weight: bolder;
+            margin: 20px 0;
+        }
+        .play-button {
+            padding: 10px 20px;
+            background-color: rgb(30, 118, 153);
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .play-button:hover {
+            background-color: #45a049;
+        }
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 24px;
+            }
+            .play-button {
+                padding: 8px 16px;
+            }
+        }     
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <video class="logo" autoplay loop muted>
+            <source src="orca.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <h1>ocean shooter</h1>
+        <button class="play-button" onclick="startGame()">Play</button>
+    </div>
+
+    <script>
+        function startGame() {
+            window.location.href = 'https://jack-sparrow-123.github.io/venom/index.html';
+        }
+    </script>
+</body>
+</html>
